@@ -10,5 +10,5 @@ router.post('/register',register);
 router.patch('/:id',autha,modify);
 router.delete('/:id',deleteOne);
 router.post('/login',login);
-// router.delete('/',deleteAll);
+router.delete('/',deleteAll);
 module.exports=router;

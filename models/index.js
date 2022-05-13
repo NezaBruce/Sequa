@@ -1,4 +1,4 @@
-const dbconf=require("../conf/db.config");
+const dbconf=require("../config/db.config");
 const Sequelize=require('sequelize');
 const sequelize=new Sequelize(dbconf.DB,dbconf.USER,dbconf.PASSWORD,{
     host:dbconf.HOST,

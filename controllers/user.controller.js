@@ -55,7 +55,6 @@ module.exports.modify=(req,res)=>{
 module.exports.deleteAll=(req,res)=>{
     users.destroy({where:{},truncate:false})
     .then(num=>{
-        // res.send(`${num}deleted successfully`);
         res.send("user deleted successfully");
     }).catch(err=>{
     console.log(err);
