@@ -35,6 +35,7 @@ module.exports.register=(req,res)=>{
         console.log(err);
     })
 }
+
 module.exports.modify=(req,res)=>{
     users.update(req.body,{
         where:{id:req.params.id}
